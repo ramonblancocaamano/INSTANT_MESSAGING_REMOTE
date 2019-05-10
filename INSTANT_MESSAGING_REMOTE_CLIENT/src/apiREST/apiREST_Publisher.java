@@ -5,6 +5,9 @@ import util.Message;
 import java.io.*;
 import java.net.*;
 
+/**
+ * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
+ */
 public class apiREST_Publisher {
   
   public static void publish(Message message) {

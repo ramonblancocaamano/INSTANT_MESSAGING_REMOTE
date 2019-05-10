@@ -6,8 +6,7 @@ import topicmanager.TopicManager;
 import topicmanager.TopicManagerImpl;
 
 /**
- *
- * @author juanluis
+ * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
  */
 @ApplicationScoped
 public class Global {

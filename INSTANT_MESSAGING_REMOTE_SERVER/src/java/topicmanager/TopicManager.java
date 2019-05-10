@@ -7,6 +7,9 @@ import java.util.List;
 import publisher.Publisher;
 import subscriber.Subscriber;
 
+/**
+ * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
+ */
 public interface TopicManager {
 
   Publisher     addPublisherToTopic(Topic topic);
@@ -17,6 +20,8 @@ public interface TopicManager {
   Subscription_check   subscribe(Topic topic, Subscriber subscriber);
   Subscription_check   unsubscribe(Topic topic, Subscriber subscriber);
   
-  //this is necessary on the remote version:
+ /*
+  * This is necessary on the remote version.
+  */
   Publisher publisher(Topic topic);
 }

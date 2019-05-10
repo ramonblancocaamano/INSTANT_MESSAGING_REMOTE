@@ -8,6 +8,9 @@ import java.net.*;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
+ */
 public class apiREST_TopicManager {
   
   public static void addPublisherToTopic(Topic topic) {

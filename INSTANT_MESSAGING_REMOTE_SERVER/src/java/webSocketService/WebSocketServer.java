@@ -17,6 +17,10 @@ import publisher.Publisher;
 import util.Global;
 
 @ServerEndpoint("/ws")
+
+/**
+ * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
+ */
 public class WebSocketServer {
 
   @Inject

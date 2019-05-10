@@ -12,14 +12,16 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import util.Global;
 
-/**
- *
- * @author juanluis
+/* 
+ * this is necessary to be able to use @Inject, only for this, this java class
+ * must be a bean:
  */
-//this is necessary to be able to use @Inject,
-//only for this, this java class must be a bean:
 @Stateless
 @Path("topicmanager")
+
+/**
+ * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
+ */
 public class TopicManagerFacadeREST {
   
   @Inject

@@ -4,8 +4,7 @@ import java.util.Set;
 import javax.ws.rs.core.Application;
 
 /**
- *
- * @author juanluis
+ * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
  */
 @javax.ws.rs.ApplicationPath("rest")
 public class ApplicationConfig extends Application {

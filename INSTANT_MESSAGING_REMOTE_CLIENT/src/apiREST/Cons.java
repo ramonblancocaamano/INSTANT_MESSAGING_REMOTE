@@ -1,8 +1,7 @@
 package apiREST;
 
 /**
- *
- * @author juanluis
+ * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
  */
 public interface Cons {
   

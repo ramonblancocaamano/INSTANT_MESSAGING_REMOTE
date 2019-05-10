@@ -10,6 +10,9 @@ import publisher.PublisherStub;
 import subscriber.Subscriber;
 import webSocketService.WebSocketClient;
 
+/**
+ * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
+ */
 public class TopicManagerStub implements TopicManager {
 
   public String user;

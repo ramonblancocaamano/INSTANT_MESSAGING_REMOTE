@@ -4,6 +4,9 @@ import util.Message;
 import javax.websocket.Session;
 import subscriber.Subscriber;
 
+/**
+ * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
+ */
 public interface Publisher {
     
     void    incPublishers();

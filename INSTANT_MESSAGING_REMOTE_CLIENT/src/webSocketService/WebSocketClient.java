@@ -17,6 +17,10 @@ import subscriber.Subscriber;
 import util.Subscription_request;
 
 @ClientEndpoint
+
+/**
+ * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
+ */
 public class WebSocketClient {
 
   static Map<Topic, Subscriber> subscriberMap;

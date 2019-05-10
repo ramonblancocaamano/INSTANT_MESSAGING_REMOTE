@@ -7,8 +7,7 @@ import java.io.IOException;
 import javax.websocket.Session;
 
 /**
- *
- * @author juanluis
+ * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
  */
 public class SubscriberImpl implements Subscriber {
 

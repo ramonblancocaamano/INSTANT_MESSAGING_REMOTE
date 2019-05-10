@@ -1,8 +1,7 @@
 package util;
 
 /**
- *
- * @author juanluis
+ * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
  */
 public class Subscription_request {
   
