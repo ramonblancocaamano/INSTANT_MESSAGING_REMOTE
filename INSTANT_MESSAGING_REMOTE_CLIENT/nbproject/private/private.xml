@@ -3,6 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/main/SwingClient.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/util/Message.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/apiREST/apiREST_Publisher.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/apiREST/Cons.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/publisher/PublisherStub.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/util/Topic_check.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/main/Client_Peter.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/webSocketService/WebSocketClient.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/util/Subscription_close.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/topicmanager/TopicManager.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/topicmanager/TopicManagerStub.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/util/Subscription_request.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/main/Client_John.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/apiREST/apiREST_TopicManager.java</file>
+            <file>file:/C:/Users/ramon/Documents/NetBeansProjects/INSTANT_MESSAGING_REMOTE/INSTANT_MESSAGING_REMOTE_CLIENT/src/publisher/Publisher.java</file>
+        </group>
     </open-files>
 </project-private>

@@ -6,7 +6,7 @@ import topicmanager.TopicManagerStub;
 /**
  * @Author: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
  */
-public class Client_John {
+public class Client_Marta {
 
   public static void main(String[] args) {
     
@@ -16,7 +16,7 @@ public class Client_John {
     */
     javax.swing.SwingUtilities.invokeLater(new Runnable() {
       public void run() {
-        SwingClient client = new SwingClient(new TopicManagerStub("john"));
+        SwingClient client = new SwingClient(new TopicManagerStub("Marta"));
         client.createAndShowGUI();
       }
     });

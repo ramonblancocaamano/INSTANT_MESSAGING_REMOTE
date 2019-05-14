@@ -15,45 +15,78 @@ import webSocketService.WebSocketClient;
  */
 public class TopicManagerStub implements TopicManager {
 
-  public String user;
+    public String user;
 
-  public TopicManagerStub(String user) {
-    WebSocketClient.newInstance();
-    this.user = user;
-  }
+    public TopicManagerStub(String user) {
+        WebSocketClient.newInstance();
+        this.user = user;
+    }
 
-  public void close() {
-    WebSocketClient.close();
-  }
+    @Override
+    public void close() {
+        WebSocketClient.close();
+    }
 
-  @Override
-  public Publisher addPublisherToTopic(Topic topic) {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-  }
+    @Override
+    public Publisher addPublisherToTopic(Topic topic) {
+        Publisher publisher;
 
-  @Override
-  public void removePublisherFromTopic(Topic topic) {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-  }
+        apiREST_TopicManager.addPublisherToTopic(topic);
+        publisher = new PublisherStub(topic);
+        return publisher;
+    }
 
-  @Override
-  public Topic_check isTopic(Topic topic) {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-  }
+    @Override
+    public void removePublisherFromTopic(Topic topic) {
+        apiREST_TopicManager.removePublisherFromTopic(topic);
+    }
 
-  @Override
-  public List<Topic> topics() {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-  }
+    @Override
+    public Topic_check isTopic(Topic topic) {
+        Topic_check check;
 
-  @Override
-  public Subscription_check subscribe(Topic topic, Subscriber subscriber) {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-  }
+        check = apiREST_TopicManager.isTopic(topic);
+        return check;
+    }
 
-  @Override
-  public Subscription_check unsubscribe(Topic topic, Subscriber subscriber) {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-  }
+    @Override
+    public List<Topic> topics() {
+        List<Topic> topics;
+
+        topics = apiREST_TopicManager.topics();
+        return topics;
+    }
+
+    @Override
+    public Subscription_check subscribe(Topic topic, Subscriber subscriber) {
+        Subscription_check subs_check;
+        Topic_check topic_check;
+
+        topic_check = isTopic(topic);
+        if (topic_check.isOpen == false) {
+            subs_check = new Subscription_check(topic, Subscription_check.Result.NO_TOPIC);
+            return subs_check;
+        }
+
+        WebSocketClient.addSubscriber(topic, subscriber);
+        subs_check = new Subscription_check(topic, Subscription_check.Result.OKAY);
+        return subs_check;
+    }
+
+    @Override
+    public Subscription_check unsubscribe(Topic topic, Subscriber subscriber) {
+        Subscription_check subs_check;
+        Topic_check topic_check;
+
+        topic_check = isTopic(topic);
+        if (topic_check.isOpen == false) {
+            subs_check = new Subscription_check(topic, Subscription_check.Result.NO_TOPIC);
+            return subs_check;
+        }
+
+        WebSocketClient.removeSubscriber(topic);
+        subs_check = new Subscription_check(topic, Subscription_check.Result.NO_SUBSCRIPTION);
+        return subs_check;
+    }
 
 }
