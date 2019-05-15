@@ -152,6 +152,7 @@ public class SwingClient {
                     check = topicManager.unsubscribe(subscriptions.get(i), my_subscriptions.get(subscriptions.get(i)));
                     if (check.result == Subscription_check.Result.NO_SUBSCRIPTION) {
                         my_subscriptions.remove(subscriptions.get(i), my_subscriptions.get(subscriptions.get(i)));
+                    	i = -1;
                     }
                 }
             }
