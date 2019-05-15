@@ -27,14 +27,18 @@ public class SubscriberImpl implements Subscriber {
         this.my_subscriptions = clientSwing.my_subscriptions;
     }
 
+    @Override
     public void onClose(Subscription_close subs_close) {
         if (subs_close.cause == Subscription_close.Cause.PUBLISHER) {
             messages_TextArea.append("Topic: " + subs_close.topic.name
                     + " has been closed, no publishers left on that topic.\n");
-            listTopics.remove(subs_close.topic);
-            topic_list_TextArea.setText("");
-            for (Topic topic : listTopics) {
-                topic_list_TextArea.append(topic.name + "\n");
+            if(!listTopics.isEmpty()) {
+                listTopics.remove(subs_close.topic);
+                
+                topic_list_TextArea.setText("");
+                for (Topic topic : listTopics) {
+                    topic_list_TextArea.append(topic.name + "\n");
+                }
             }
         } else if (subs_close.cause == Subscription_close.Cause.SUBSCRIBER) {
             messages_TextArea.append("subscription on topic: " + subs_close.topic.name

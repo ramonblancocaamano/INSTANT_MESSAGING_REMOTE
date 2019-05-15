@@ -118,7 +118,8 @@ public class SwingClient {
         public void actionPerformed(ActionEvent e) {            
             showSubscribersHandler showSubscribers = new showSubscribersHandler();
             
-            listTopics = topicManager.topics();
+            listTopics.clear();
+            listTopics.addAll(topicManager.topics());
             
             topic_list_TextArea.setText("");
             for (Topic topic : listTopics) {
@@ -138,7 +139,6 @@ public class SwingClient {
             boolean hasTopic;
 
             subscriptions = new ArrayList<Topic>(my_subscriptions.keySet());
-            listTopics = topicManager.topics();
 
             if (subscriptions.isEmpty()) {
                 my_subscriptions_TextArea.setText("");
